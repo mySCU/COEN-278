@@ -1,5 +1,5 @@
 language: python
-python: 3.5           # version of Python to use
+python: 3.4           # version of Python to use
 branches: master      # branch to build from
 
 install:
@@ -15,5 +15,4 @@ deploy:
   local_dir: site
   on:
     branch: master
-
-verbose: true
+  verbose: true

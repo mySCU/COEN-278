@@ -120,9 +120,44 @@ Everything is a object
 
 #### Range
 
-1. Format
-    - `1..5` or `Range.new(1, 5, false)`: include the end value
-    - `1...5` or `Range.new(1, 5, true)` not include the end value
+1. Format: 
+    - `(1..5)` or `Range.new(1, 5, false)`: include the end value
+    - `(1...5)` or `Range.new(1, 5, true)` not include the end value
+
+1. Method
+    - `(1..5).end == (1...5).end`, `(1..5).begin == (1...5).begin`: although the later not include the end point.
+    - `(1...5).exclude_end?` => true
+    - `.cover?(e)` or `.include?(e)`, return true if e INCLUDED IN RANGE (no need to be explicit)
+        - `(1..5).cover?(2.5)` => `true`
+        - `(‘car’..’cat’).include?(‘cas’)` => `true`
+    - `.first(n)`, `.last(n)`
+    - Element number
+        - `.count`
+        - `.size` not work for non integer sequence.
+    - `(..).step(n)`: same as `range(start, end, step)` in Python.
+    - `.min`, `.max`
+
+1. Iterative: provide params to iterative blocks
+
+    ```ruby
+    (1..10).each {|x| p x, '-'}
+    ```
+
+    or
+
+    ```ruby
+    (1..10).each do |x|
+        p x, '-'
+    end
+    ```
+
+    is the same to
+
+    ```ruby
+    for x in (1..10) do
+        p x, '-'
+    end
+    ```
 
 #### String
 

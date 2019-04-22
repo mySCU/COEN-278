@@ -59,8 +59,10 @@ extra_javascript:
 
 # Extensions
 markdown_extensions:
+    - admonition
     - codehilite:
         linenums: true
+    - footnotes
     - toc:
         permalink: false
     - pymdownx.arithmatex

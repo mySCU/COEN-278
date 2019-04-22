@@ -1,9 +1,11 @@
 language: python
-python: 3.4           # version of Python to use
+python: 3.6           # version of Python to use
 branches: master      # branch to build from
 
-script:
+install:
   - pip install mkdocs mkdocs-material pymdown-extensions pygments
+
+script:
   - mkdocs build --verbose --clean
 
 deploy:

@@ -4,15 +4,14 @@ branches: master      # branch to build from
 
 install:
   - pip install mkdocs mkdocs-material pymdown-extensions pygments
-  - mkdocs build --verbose --clean --strict 
+  - mkdocs build --verbose --clean
 
-# before_deploy:
-
-deploy:               # Deploy on gh_pages branch
+deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $github_token
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   local_dir: site/
   on:
     branch: master
-  verbose: true
+
+verbose: true

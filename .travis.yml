@@ -6,13 +6,13 @@ install:
   - pip install mkdocs mkdocs-material pymdown-extensions pygments
 
 before_deploy:
-  # Build a local version of the docs
   - mkdocs build --verbose --clean --strict 
 
 deploy:               # Deploy on gh_pages branch
   provider: pages
   skip_cleanup: true
   github_token: $github_token
-  local_dir: site
+  local_dir: site/
   on:
     branch: master
+  verbose: true

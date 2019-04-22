@@ -1,5 +1,5 @@
 language: python
-python: 3.7           # version of Python to use
+python: 3.5           # version of Python to use
 branches: master      # branch to build from
 
 install:

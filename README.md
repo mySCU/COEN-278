@@ -1,5 +1,7 @@
 # COEN 278 Advanced Web Programming
 
+[![Build Status](https://travis-ci.org/EICamino/COEN-278.svg?branch=master)](https://travis-ci.org/EICamino/COEN-278)
+
 ## Information
 
 - Code: COEN 278

@@ -20,10 +20,8 @@
 
 Download [this dockerfile][df] and run the following script. `[tag]` is the tag name for image, whose format is `name:version`, eg. `ruby:2.5.1`
 
-??? note "Build the image and run the container"
-
     ```sh
-    docker build -f ruby.dockerfile -t [tag]
+    docker build -f ruby.dockerfile -t [tag] .
     docker run -it tag
     ```
 
@@ -80,43 +78,37 @@ Everything is a object
         - `#!ruby 5.upto(10) {|x| p x}`: transfer 5-10 into block as `x`
         - `#!ruby 5.downto(1) {|x| p x}`: transfer 5-1 into block as `x`
 
-    ??? note "Systems"
+    ``` ruby
+    # Decimal
+    123, 0d123, 408_345_6789
 
-        ``` ruby
-        # Decimal
-        123, 0d123, 408_345_6789
+    # binary
+    0b100111
 
-        # binary
-        0b100111
+    # octal
+    0123m 0o123
 
-        # octal
-        0123m 0o123
-
-        # hex
-        0x7B
-        ```
+    # hex
+    0x7B
+    ```
 
 1. Float
 
-    ??? note "Scientific otation"
-
-        ``` ruby
-        # Decimal
-        0.123e2     # 12.3
-        123e-1      # 12.3
-        ```
+    ``` ruby
+    # Decimal
+    0.123e2     # 12.3
+    123e-1      # 12.3
+    ```
 
 1. Rational
 1. Complex
 1. Get class
 
-    ??? note "Get class name"
-
-        ``` ruby
-        # Decimal
-        p "".class
-        p 1.class
-        ```
+    ``` ruby
+    # Decimal
+    p "".class
+    p 1.class
+    ```
 
 #### Range
 
@@ -137,7 +129,7 @@ Everything is a object
     - `(..).step(n)`: same as `range(start, end, step)` in Python.
     - `.min`, `.max`
 
-1. Iterative: provide params to iterative blocks
+1. Iterative: provides each element to iterative blocks
 
     ```ruby
     (1..10).each {|x| p x, '-'}
@@ -160,6 +152,74 @@ Everything is a object
     ```
 
 #### String
+
+1. Format: 
+    - Quote: only double quoted string will be parsed
+    - `%`
+        - Followed by `Q{}` or one in `{}, ( ), < >, [ ], / /, * *, # #, ! !, @@, &&, ^^, ++, - -,| |, : :, ; ; % %` will be parse.
+        - Followed by a pair of `q{}` won't be parsed.
+        - Convenient when contents includes quote marks.
+
+    ``` ruby
+    str1 = 'a string \n'        # => "1 + 1 is \#{1+1}"
+    str2 = '1 + 1 is #{1+1}'    # => "1 + 1 is \#{1+1}"
+    str2 = %q{1 + 1 is #{1+1}}  # => "1 + 1 is \#{1+1}"
+    str3 = "a string \n"        # => "1 + 1 is 2"
+    str4 = '1 + 1 is #{1+1}'    # => "1 + 1 is 2"
+    str2 = %Q{1 + 1 is #{1+1}}  # => "1 + 1 is 2"
+    str5 = String.new("another string")
+    ```
+
+1. Here document (show as it is)
+
+    ``` ruby
+    x = <<END_MARK
+    Contents
+        Contents
+    END_MARK
+    ```
+
+    ??? note "`puts` vs. `p`"
+
+1. Methods
+    - Concatenation
+        - `<<`: same as `+`.
+
+        ``` ruby
+        "i love you " + "forever"       # "i love you forever"
+        "i love you ""forever"          # "i love you forever"
+        "over " * 3 + " again"          # "over over over again"
+        a = "i love you"
+        a << "r money"                  # "i love your money"
+        ```
+
+    - `<=>` operator: returns -1, 0, or 1 for `<`, `=`, and `>` correspondingly.
+
+        ``` ruby
+        "1" < "2"       # -1
+        "1" < "1"       # 0
+        "2" < "1"       # 1
+        ```
+
+    - Slicing
+
+        ``` ruby
+        a = "0123456"
+        a[0]            # "0"
+        a[2, 5]         # "23456" !!!
+        a[2..5]         # "2345"
+        a[2...5]        # "234"
+        a.length        # 7
+        ```
+
+1. Iterative: provides each character to iterative blocks
+
+    ```ruby
+    "iloveyou".each_char {|x| print x, '-'}     # i-l-o-v-e-y-o-u-
+    ```
+
+### Symbol
+
 
 <!-- footnotes -->
 [^1]:

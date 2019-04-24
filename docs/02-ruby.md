@@ -62,11 +62,11 @@ Reference: [official Ruby website][rb]
     obj.my_method
     ```
 
-### Data Structure
+## Data Structure
 
 Everything is a object
 
-#### Numeric
+### Numeric
 
 1. Integer
     - `1.even?`, `1.odd?`, `1.zero?`, `1.abs`: `?` belongs to methods names.
@@ -110,7 +110,7 @@ Everything is a object
     p 1.class
     ```
 
-#### Range
+### Range
 
 1. Format: 
     - `(1..5)` or `Range.new(1, 5, false)`: include the end value
@@ -151,7 +151,7 @@ Everything is a object
     end
     ```
 
-#### String
+### String
 
 1. Format: 
     - Quote: only double quoted string will be parsed
@@ -206,7 +206,7 @@ Everything is a object
         ``` ruby
         a = "0123456"
         a[0]            # "0"
-        a[2, 5]         # "23456" !!!
+        a[2, 5]         # start from 2, 5 elements
         a[2..5]         # "2345"
         a[2...5]        # "234"
         a.length        # 7
@@ -220,6 +220,37 @@ Everything is a object
 
 ### Symbol
 
+1. Hash:
+
+``` ruby
+person[:name]  = 'yuan'
+person['name'] = 'yuan'     # NOT same as above
+```
+
+1. Method arg
+
+``` ruby
+class Test
+    def tmp
+        puts "symbol method"
+    end
+end
+
+myObj = Test.new()
+m = :tmp
+obj.method(m).call      # => "symbol method"
+```
+
+### Containers
+
+#### Array
+
+1. Similar to Python `list`, can have diff types of element.
+
+## Wired
+
+1. Week 1-2 slide 11 `a[2, 5]`
+1. Week 1-2 slide 22 `[:name]` and `['name']`
 
 <!-- footnotes -->
 [^1]:

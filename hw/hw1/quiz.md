@@ -3,12 +3,13 @@
 <!-- TOC -->
 
 - [Assignment](#assignment)
-    - [Question 1.](#question-1)
-    - [Question 2.](#question-2)
+    - [Question 1](#question-1)
+    - [Question 2](#question-2)
+    - [Question 3](#question-3)
 
 <!-- /TOC -->
 
-## Question 1.
+## Question 1
 
 Define a string using either literal or “here document”, for example, the following variable “str” is defined with a “here document”
 
@@ -33,32 +34,33 @@ str2 = %{three, three, three}
 str2.count_word()        # => {"three"=>3}
 ```
 
-## Question 2.
+## Question 2
 
 Define an array of student record, for example,
 
+``` ruby
 students = [
-
-{:firstname => "John", :lastname => "LastnameJohn",  :phonenumber => 123456789},
-{:firstname => "Ken", :lastname => "Lastnameken",  :phonenumber => 456734244},
-{:firstname => "Marisa", :lastname => "lastnamemarisa",  :phonenumber => 443234567},
-{:firstname => "Ken", :lastname => "Kenlastname",  :phonenumber => 456734244}
-
+      {:firstname => "John", :lastname => "LastnameJohn",  :phonenumber => 123456789},
+      {:firstname => "Ken", :lastname => "Lastnameken",  :phonenumber => 456734244},
+      {:firstname => "Marisa", :lastname => "lastnamemarisa",  :phonenumber => 443234567},
+      {:firstname => "Ken", :lastname => "Kenlastname",  :phonenumber => 456734244}
 ]
+```
 
 write a Search class, the instance method of its object is able to query student,
 
 for example find all the record with first firstname being “ken”:
 
-obj.search_students(students, firstname: “ken”), it will print:
+`obj.search_students(students, firstname: “ken”)`, it will print:
 
 First Name  Last Name      Phone#
 
 Ken            Lastnameken  456734244
 Ken            Kenlastname   456734244
 
+## Question 3
 
-Question 3.  write a class for compressing a string. when you create an object of this class, you provide a string, then the object save the compressed result (no duplicate words) as the state of the  object. the compressed result will have two arrays:  an array for strings and an array for index.
+write a class for compressing a string. when you create an object of this class, you provide a string, then the object save the compressed result (no duplicate words) as the state of the  object. the compressed result will have two arrays:  an array for strings and an array for index.
 
 for example:  assuming the name of your class is Compress
 

@@ -1,0 +1,44 @@
+root@337d04a324cd:/ruby# ./main.rb
+
+===== Question 1 =====
+1
+{"three"=>3}
+2
+
+===== Question 2 =====
+First Name      Last Name       Phone
+
+Ken             Lastnameken     456734244
+Ken             Kenlastname     456734244
+
+===== Question 3 =====
+["i", "love", "you", "but", "do", "me"]
+[0, 1, 2, 3, 4, 2, 1, 5]
+
+===== Question 4 =====
+.merge
+{"a"=>100, "b"=>254, "c"=>300}
+{"a"=>100, "b"=>54, "c"=>300}
+{"a"=>100, "b"=>200}
+
+.merge!
+{"a"=>100, "b"=>54, "c"=>300}
+{"a"=>100, "b"=>54, "c"=>300}
+
+===== Question 5 =====
+    <h3>Tasks</h3>
+    <div id='tasks'>
+        <div class='links'>
+        </div>
+    </div>
+
+===== Question 6 =====
+ADVISOR: I'll try. Where are you thinking of transferring to? And why do
+ADVISOR: I see. And would you keep the same major if you transferred?
+ADVISOR: May I ask why you chose to come to Kryptos University in the
+ADVISOR: You're right, Mr. Vickstad, we do have an excellent business
+ADVISOR: You know, freshman year is usually the hardest. I remember
+ADVISOR: Yes, it did. You might well find the same is true for you. Also,
+ADVISOR: You can always move back there after you graduate. Of
+ADVISOR: Don't mention it. If you feel like you want to talk more, don't
+root@337d04a324cd:/ruby#

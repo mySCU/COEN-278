@@ -9,7 +9,7 @@ nav:
     - Introduction: index.md
     - Web Programming Overall: 01-web-programming-overall.md
     - Ruby Language: 02-ruby.md
-    - Ruby Socket Programming: 03-socket
+    - Ruby Socket Programming: 03-socket.md
 
 # Repository
 repo_name: EICamino/COEN-278

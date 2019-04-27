@@ -8,7 +8,7 @@
     - Inheritance: `TCPSocket` -> `IPSocket` -> `Socket` -> `BasicSocket` -> `IO`
 
 1. Server (Listener)
-    - Structure: `Create` -> `Bind` -> `Listen` -> `Accept` -> `Close` -> `Listen`
+    - <details><summary>Structure: `Create` -> `Bind` -> `Listen` -> `Accept` -> `Close` -> `Listen`</summary>
 
         ``` ruby
         require 'socket'    # include socket in standard library
@@ -36,9 +36,10 @@
             conn.close
         end
         ```
+        </details>
 
     - Syntax sugar
-        - Combine `Create` -> `Bind` -> `Listen`
+        - <details><summary>Combine `Create` -> `Bind` -> `Listen`</summary>
 
             ``` ruby
             require 'socket'            # include socket in standard library
@@ -53,8 +54,9 @@
                 conn.close              # next conn won't accepted until the block returns.
             end                         # Use Thread for multiple clients
             ```
+            <details>
 
-        - √ Wrap all steps
+        - <details><summary>√ Wrap all steps</summary>
 
             ``` ruby
             require 'socket'
@@ -63,9 +65,10 @@
                 conn.close
             end
             ```
+            </details>
 
 1. Client (Initate)
-    - Structure: `Create` -> `Connect` -> `Close`
+    - <details><summary>Structure: `Create` -> `Connect` -> `Close`</summary>
 
         ``` ruby
         require 'socket'    # include socket in standard library
@@ -83,8 +86,9 @@
         }
         sock_clnt.connect(serv_addr)
         ```
+        </summary>
 
-    - Syntax sugar: wrap all steps
+    - <details><summary>Syntax sugar: wrap all steps</summary>
 
         ``` ruby
         require 'socket'
@@ -94,11 +98,12 @@
             port,                   # int, (1025..48999)
         )
         ```
+    </details>
 
 ## Create Web Server
 
 1. Socket connection -> file
-    - "Read" socket
+    - <details><summary>"Read" socket</summary>
 
         ```ruby
         require 'socket'
@@ -108,8 +113,9 @@
             conn.close
         end
         ```
+        </details>
 
-    - "Write" socket
+    - <details><summary>"Write" socket</summary>
 
         ```ruby
         require 'socket'
@@ -117,6 +123,7 @@
         sock_clnt = TCPSocket.new("localhost", 1234)
         sock_clnt.write(str)
         ```
+        </details>
 
 1. <details><Summary>HTTP request Header</Summary>
 

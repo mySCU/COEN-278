@@ -2,7 +2,7 @@
 
 ## Socket
 
-1. Hierarch: 
+1. Hierarchy: 
     - Web app -> HTTP -> TCP/IP (Layer 4 -> transport layer)
     - Ruby `socket`(std-lib) -> standard socket API (Berkeley/POSIX Sockets)
     - Inheritance: `TCPSocket` -> `IPSocket` -> `Socket` -> `BasicSocket` -> `IO`
@@ -117,3 +117,29 @@
         sock_clnt = TCPSocket.new("localhost", 1234)
         sock_clnt.write(str)
         ```
+
+1. <details><Summary>HTTP request Header</Summary>
+
+    ``` http
+    GET /hello.htm HTTP/1.1
+    User-Agent: Mozilla/4.0 (compatible; MSIE5.0; Windows NT)
+    Host: www.tutorialpoint.com
+    Accept-Language: en-us
+    Accept-Encoding: gzip, deflate
+    Connection: Keep-Alive
+    ```
+
+    </details>
+
+1. <details><Summary>HTTP Response Header</Summary>
+
+    ``` http
+    GET /hello.htm HTTP/1.1
+    User-Agent: Mozilla/4.0 (compatible; MSIE5.0; Windows NT)
+    Host: www.tutorialpoint.com
+    Accept-Language: en-us
+    Accept-Encoding: gzip, deflate
+    Connection: Keep-Alive
+    ```
+
+    </details>

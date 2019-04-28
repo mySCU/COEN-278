@@ -140,7 +140,7 @@
 
 1. <details><Summary>HTTP Response Header</Summary>
 
-    ``` http
+    ``` httP
     GET /hello.htm HTTP/1.1
     User-Agent: Mozilla/4.0 (compatible; MSIE5.0; Windows NT)
     Host: www.tutorialpoint.com

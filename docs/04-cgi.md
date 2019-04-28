@@ -27,4 +27,4 @@
 1. Now you can access `.rb` script by access `http://localhost/cgi-bin/[filename].rb`, the page will be rendered dynamically at the moment you modify the `.rb` script.
 
 <!-- links -->
-[df]: res/cgi-ruby.Dockerfile
+[df]: res/cgi-ruby.dockerfile

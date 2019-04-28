@@ -261,4 +261,4 @@ obj.method(m).call      # => "symbol method"
 <!-- links -->
 [matz]:https://github.com/matz
 [rb]:https://www.ruby-lang.org/en/downloads/
-[df]:res/ruby.dockerfile
+[df]:res/rb.dockerfile

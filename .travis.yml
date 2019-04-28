@@ -6,7 +6,7 @@ install:
   - pip install mkdocs mkdocs-material pymdown-extensions pygments
 
 script:
-  - mkdocs build --verbose --clean
+  - mkdocs build --verbose --clean --strict
 
 deploy:
   provider: pages

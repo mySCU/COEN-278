@@ -54,7 +54,7 @@
                 conn.close              # next conn won't accepted until the block returns.
             end                         # Use Thread for multiple clients
             ```
-            <details>
+            </details>
 
         - <details><summary>√ Wrap all steps</summary>
 

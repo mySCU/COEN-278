@@ -21,7 +21,7 @@
 
 ## Docker Ruby CGI server image
 
-[A docker image for Ruby CGI server.](04-cgi.md)
+[A docker image for Ruby CGI server.](docs/04-cgi.md)
 
 <!-- link -->
 [yw]:https://www.linkedin.com/in/yuan-wang-ba5a31a8/

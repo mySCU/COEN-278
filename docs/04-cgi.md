@@ -1,6 +1,6 @@
 # CGI - Common Gateway Interface
 
-## Apache2 server using Ruby Scripts in Docker
+## Apache2 Server Docker Ruby CGI Image
 
 1. Download [this dockerfile][df] and run the following script. `[tag]` is the tag name for image, eg. `cgi-ruby`
 

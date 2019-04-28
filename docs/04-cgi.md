@@ -2,7 +2,7 @@
 
 ## Apache2 Server Docker Ruby CGI Image
 
-1. Download [this dockerfile][df] and run the following script. `[tag]` is the tag name for image, eg. `cgi-ruby`
+1. Download [THIS Dockerfile][df] and run the following script. `[tag]` is the tag name for image, eg. `cgi-ruby`
 
     ```sh
     docker build -f ruby.dockerfile -t [tag] .

@@ -18,7 +18,7 @@
 
 ### Method 1: Docker
 
-Download [this dockerfile][df] and run the following script. `[tag]` is the tag name for image, whose format is `name:version`, eg. `ruby:2.5.1`
+Download [THIS Dockerfile][df] and run the following script. `[tag]` is the tag name for image, whose format is `name:version`, eg. `ruby:2.5.1`
 
     ```sh
     docker build -f ruby.dockerfile -t [tag] .

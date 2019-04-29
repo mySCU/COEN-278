@@ -100,7 +100,7 @@
         ```
     </details>
 
-## Create Web Server
+## Web Server
 
 1. Socket connection -> file
     - <details><summary>"Read" socket</summary>
@@ -123,7 +123,8 @@
         sock_clnt = TCPSocket.new("localhost", 1234)
         sock_clnt.write(str)
         ```
-        </details>
+
+    </details>
 
 1. <details><Summary>HTTP request Header</Summary>
 
@@ -140,7 +141,7 @@
 
 1. <details><Summary>HTTP Response Header</Summary>
 
-    ``` httP
+    ``` http
     GET /hello.htm HTTP/1.1
     User-Agent: Mozilla/4.0 (compatible; MSIE5.0; Windows NT)
     Host: www.tutorialpoint.com
@@ -150,3 +151,48 @@
     ```
 
     </details>
+
+## Web Client
+
+1. <details><summary><code>Net::HTTP</code> library</summary>
+
+    ``` ruby
+    require 'net/http'
+
+    site - %{domainName.com}
+    path = "/"
+
+    response = Net::HTTP.get_response(site, path)
+    puts "Code = #{response.code}"
+    puts "Message = #{response.message}"
+
+    response.each do |key, value|
+        printf "%-15s = %-100s\n", key, value
+    end
+
+    p response.body[0, 500]
+    ```
+
+</details>
+
+1. <details><summary><code>open-uri</code> library</summary>
+
+    ``` ruby
+    require 'open-uri'
+
+    site = %{domainName.com}
+
+    open(site) do |f|
+        puts "URI: #{f.base_uri}"
+        puts "Content_type: #{f.content_type}"
+        puts "Charset: #{f.charset}"
+        puts "Encoding: #{f.content_encoding}"
+        puts "Last modified: #{f.last_modified}"
+        puts "Status: #{f.status.inspect}"
+        puts
+        puts "----- body -----"
+        20.times {|n| puts "#{n}: #{f.gets}"}
+    end
+    ```
+
+</details>

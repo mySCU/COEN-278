@@ -1,6 +1,6 @@
 # COEN 278 Advanced Web Programming - Santa Clara University
 
-## Browsing Website
+## Current Building Status
 
 [![Build Status](https://travis-ci.org/EICamino/COEN-278.svg?branch=master)](https://ruby.mzhao.page/)
 

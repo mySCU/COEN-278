@@ -9,10 +9,12 @@
         - System Admin: automation script
         - Web programming
 
-1. Programming paradigm: Ruby can do all (need further explaination)
-    - Procedural
-    - Functional
-    - Object oriented[^1]
+1. Programming paradigm: Ruby can do all (need further explanation)
+    - Procedural: data and functions not associated
+    - Functional: anonymous functions
+    - Object oriented: data and algorithms are associated
+        - class based: instantiate
+        - prototype based: clone
 
 ## Installation
 
@@ -251,6 +253,11 @@ obj.method(m).call      # => "symbol method"
 
 1. Week 1-2 slide 11 `a[2, 5]`
 1. Week 1-2 slide 22 `[:name]` and `['name']`
+
+## TBD
+
+- <code>include</code>: add everything __belongs to__ the included class/module (class var, inst method, module const)
+- <code>extend</code>: add inst method as class method (extend it to single subclass)
 
 <!-- footnotes -->
 [^1]:

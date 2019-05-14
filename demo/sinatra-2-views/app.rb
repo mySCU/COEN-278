@@ -1,5 +1,8 @@
 require 'sinatra'
 
+# edit ip bonded
+set :bind, '0.0.0.0'
+
 get '/' do
   @title = "home"
   erb(:home)

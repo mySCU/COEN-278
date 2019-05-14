@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+# edit ip bonded
+set :bind, '0.0.0.0'
+
 get '/hello' do
   "<h1> i got your request, this is my response</h1>"
 end

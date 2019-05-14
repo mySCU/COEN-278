@@ -11,6 +11,10 @@ RUN gem install \
         sinatra \
         sinatra-reloader
 
+COPY demo /usr/src
+
+WORKDIR /usr/src/demo
+
 CMD [ "bash" ]
 
 EXPOSE 4567

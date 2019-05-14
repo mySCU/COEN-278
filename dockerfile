@@ -11,7 +11,7 @@ RUN gem install \
         sinatra \
         sinatra-reloader
 
-COPY demo /usr/src
+COPY demo /usr/src/demo
 
 WORKDIR /usr/src/demo
 

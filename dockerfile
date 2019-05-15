@@ -6,13 +6,16 @@ RUN apt-get update \
         ruby \
         ruby-dev \
         build-essential \
+        libsqlite3-dev \
         vim
 
 # sinatra, THIN server
 RUN gem install \
         sinatra \
         sinatra-reloader \
-        thin
+        thin \
+        data_mapper \
+        dm-sqlite-adapter
 
 COPY demo /usr/src/demo
 

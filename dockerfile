@@ -9,7 +9,8 @@ RUN apt-get update \
 # sinatra
 RUN gem install \
         sinatra \
-        sinatra-reloader
+        sinatra-reloader \
+        thin
 
 COPY demo /usr/src/demo
 

@@ -6,7 +6,7 @@ RUN apt-get update \
         ruby \
         vim
 
-# sinatra
+# sinatra, THIN server
 RUN gem install \
         sinatra \
         sinatra-reloader \

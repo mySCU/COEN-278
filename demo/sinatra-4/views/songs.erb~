@@ -1,0 +1,5 @@
+<h2>Song list </h2>
+<ul>
+<% @songs.each do |song| %>
+<% end %>
+</ul>

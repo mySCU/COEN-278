@@ -1,0 +1,36 @@
+html {background-color: #ccc;}
+body {
+    width:700px;
+    height:900px;
+    background-color:#dddcd9;
+    margin:2em auto 2em;
+    padding:25px;
+    position:relative;
+}
+
+h1 {
+    color:#a09b89
+}
+ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    background: blue;
+    overflow: hidden;
+    width: 100%;
+}
+li {
+    float: left;
+}
+a {
+    text-decoration:none;
+    display:block;
+    padding:8px;
+    background: blue;
+    color: yellow;
+}
+a:hover {
+    background: #637094
+}
+
+

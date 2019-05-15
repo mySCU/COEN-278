@@ -4,6 +4,8 @@ FROM debian:latest
 RUN apt-get update \
     && apt-get install -y \
         ruby \
+        ruby-dev \
+        build-essential \
         vim
 
 # sinatra, THIN server
@@ -18,4 +20,4 @@ WORKDIR /usr/src/demo
 
 CMD [ "bash" ]
 
-EXPOSE 4567
+EXPOSE 80

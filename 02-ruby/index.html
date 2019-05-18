@@ -1,0 +1,381 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="COEN 278 note and assignments, Advanced Web Programming."><link rel="canonical" href="https://ruby.mzhao.page/02-ruby/"><meta name="author" content="Mingyang Zhao"><meta name="lang:clipboard.copy" content="Copy to clipboard"><meta name="lang:clipboard.copied" content="Copied to clipboard"><meta name="lang:search.language" content="en"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="No matching documents"><meta name="lang:search.result.one" content="1 matching document"><meta name="lang:search.result.other" content="# matching documents"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../assets/images/favicon.png"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.0"><title>Ruby Language - COEN 278 - Advanced Web Programming</title><link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#3f51b5"><script src="../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../assets/fonts/material-icons.css"></head><body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="teal"><svg class="md-svg"><defs><svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#ruby" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href="https://ruby.mzhao.page" title="COEN 278 - Advanced Web Programming" class="md-header-nav__button md-logo"><i class="md-icon">import_contacts</i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">COEN 278 - Advanced Web Programming</span><span class="md-header-nav__topic">Ruby Language</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Type to start searching</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div><div class="md-flex__cell md-flex__cell--shrink"><div class="md-header-nav__source"><a href="https://github.com/EICamino/COEN-278/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">EICamino/COEN-278</div></a></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href="https://ruby.mzhao.page" title="COEN 278 - Advanced Web Programming" class="md-nav__button md-logo"><i class="md-icon">import_contacts</i></a>COEN 278 - Advanced Web Programming</label><div class="md-nav__source"><a href="https://github.com/EICamino/COEN-278/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">EICamino/COEN-278</div></a></div><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href=".." title="Introduction" class="md-nav__link">Introduction</a></li><li class="md-nav__item"><a href="../01-web-programming-overall/" title="Web Programming Overall" class="md-nav__link">Web Programming Overall</a></li><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">Ruby Language</label><a href="./" title="Ruby Language" class="md-nav__link md-nav__link--active">Ruby Language</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#history-and-fundamentals" title="History and fundamentals" class="md-nav__link">History and fundamentals</a></li><li class="md-nav__item"><a href="#installation" title="Installation" class="md-nav__link">Installation</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#method-1-docker" title="Method 1: Docker" class="md-nav__link">Method 1: Docker</a></li><li class="md-nav__item"><a href="#method-2-installation-in-the-system" title="Method 2: installation in the system" class="md-nav__link">Method 2: installation in the system</a></li><li class="md-nav__item"><a href="#environment" title="Environment" class="md-nav__link">Environment</a></li></ul></nav></li><li class="md-nav__item"><a href="#basics" title="Basics" class="md-nav__link">Basics</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#glance-of-ruby" title="Glance of Ruby" class="md-nav__link">Glance of Ruby</a></li></ul></nav></li><li class="md-nav__item"><a href="#data-structure" title="Data Structure" class="md-nav__link">Data Structure</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#numeric" title="Numeric" class="md-nav__link">Numeric</a></li><li class="md-nav__item"><a href="#range" title="Range" class="md-nav__link">Range</a></li><li class="md-nav__item"><a href="#string" title="String" class="md-nav__link">String</a></li><li class="md-nav__item"><a href="#symbol" title="Symbol" class="md-nav__link">Symbol</a></li><li class="md-nav__item"><a href="#containers" title="Containers" class="md-nav__link">Containers</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#array" title="Array" class="md-nav__link">Array</a></li></ul></nav></li></ul></nav></li><li class="md-nav__item"><a href="#wired" title="Wired" class="md-nav__link">Wired</a></li><li class="md-nav__item"><a href="#tbd" title="TBD" class="md-nav__link">TBD</a></li></ul></nav></li><li class="md-nav__item"><a href="../03-socket/" title="Ruby Socket Programming" class="md-nav__link">Ruby Socket Programming</a></li><li class="md-nav__item"><a href="../04-cgi/" title="Ruby CGI" class="md-nav__link">Ruby CGI</a></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#history-and-fundamentals" title="History and fundamentals" class="md-nav__link">History and fundamentals</a></li><li class="md-nav__item"><a href="#installation" title="Installation" class="md-nav__link">Installation</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#method-1-docker" title="Method 1: Docker" class="md-nav__link">Method 1: Docker</a></li><li class="md-nav__item"><a href="#method-2-installation-in-the-system" title="Method 2: installation in the system" class="md-nav__link">Method 2: installation in the system</a></li><li class="md-nav__item"><a href="#environment" title="Environment" class="md-nav__link">Environment</a></li></ul></nav></li><li class="md-nav__item"><a href="#basics" title="Basics" class="md-nav__link">Basics</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#glance-of-ruby" title="Glance of Ruby" class="md-nav__link">Glance of Ruby</a></li></ul></nav></li><li class="md-nav__item"><a href="#data-structure" title="Data Structure" class="md-nav__link">Data Structure</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#numeric" title="Numeric" class="md-nav__link">Numeric</a></li><li class="md-nav__item"><a href="#range" title="Range" class="md-nav__link">Range</a></li><li class="md-nav__item"><a href="#string" title="String" class="md-nav__link">String</a></li><li class="md-nav__item"><a href="#symbol" title="Symbol" class="md-nav__link">Symbol</a></li><li class="md-nav__item"><a href="#containers" title="Containers" class="md-nav__link">Containers</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#array" title="Array" class="md-nav__link">Array</a></li></ul></nav></li></ul></nav></li><li class="md-nav__item"><a href="#wired" title="Wired" class="md-nav__link">Wired</a></li><li class="md-nav__item"><a href="#tbd" title="TBD" class="md-nav__link">TBD</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><a href="https://github.com/EICamino/COEN-278/edit/master/docs/02-ruby.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a><h1 id="ruby">Ruby</h1>
+<h2 id="history-and-fundamentals">History and fundamentals</h2>
+<ol>
+<li>
+<p>Ruby</p>
+<ul>
+<li>Parent: <a href="https://github.com/matz">Yukihiro "Matz" Matsumoto</a></li>
+<li>Age: 1995 - now</li>
+<li>Used in<ul>
+<li>System Admin: automation script</li>
+<li>Web programming</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Programming paradigm: Ruby can do all (need further explanation)</p>
+<ul>
+<li>Procedural: data and functions not associated</li>
+<li>Functional: anonymous functions</li>
+<li>Object oriented: data and algorithms are associated<ul>
+<li>class based: instantiate</li>
+<li>prototype based: clone</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="installation">Installation</h2>
+<h3 id="method-1-docker">Method 1: Docker</h3>
+<p>Download <a href="../res/ruby.dockerfile">THIS Dockerfile</a> and run the following script. <code class="codehilite"><span class="o">[</span><span class="n">tag</span><span class="o">]</span><span class="w"></span></code> is the tag name for image, whose format is <code class="codehilite"><span class="n">name</span><span class="o">:</span><span class="n">version</span></code>, eg. <code class="codehilite"><span class="n">ruby</span><span class="o">:</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">1</span></code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">```</span><span class="n">sh</span><span class="w"></span>
+<span class="n">docker</span><span class="w"> </span><span class="n">build</span><span class="w"> </span><span class="o">-</span><span class="n">f</span><span class="w"> </span><span class="n">ruby</span><span class="p">.</span><span class="n">dockerfile</span><span class="w"> </span><span class="o">-</span><span class="n">t</span><span class="w"> </span><span class="o">[</span><span class="n">tag</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="n">docker</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">-</span><span class="n">it</span><span class="w"> </span><span class="n">tag</span><span class="w"></span>
+<span class="err">```</span><span class="w"></span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="method-2-installation-in-the-system">Method 2: installation in the system</h3>
+<p>Reference: <a href="https://www.ruby-lang.org/en/downloads/">official Ruby website</a></p>
+<h3 id="environment">Environment</h3>
+<ol>
+<li><code class="codehilite"><span class="n">irb</span></code>: interactive Ruby</li>
+<li><code class="codehilite"><span class="na">.rb</span></code>: Ruby program</li>
+</ol>
+<h2 id="basics">Basics</h2>
+<h3 id="glance-of-ruby">Glance of Ruby</h3>
+<ol>
+<li>Structure<ul>
+<li>Methods definitions</li>
+<li>Statements that call methods</li>
+<li>Classes with methods</li>
+<li>Statements that create objects</li>
+<li>Other statements</li>
+</ul>
+</li>
+</ol>
+<p>??? example "MyClass.rb"</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>``` <span class="nv">ruby</span> <span class="nv">tab</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">Ruby</span><span class="s2">&quot;</span>
+<span class="nv">class</span> <span class="nv">MyClass</span>           # <span class="nv">define</span> <span class="nv">a</span> <span class="nv">class</span>
+    <span class="nv">def</span> <span class="nv">initialize</span><span class="ss">(</span><span class="nv">var</span><span class="ss">)</span> # <span class="nv">constructor</span> <span class="nv">method</span>
+        @<span class="nv">var</span><span class="o">=</span><span class="nv">var</span>
+    <span class="k">end</span>
+
+    <span class="nv">def</span> <span class="nv">my_method</span>       # <span class="nv">instance</span> <span class="nv">method</span>
+        <span class="nv">p</span> <span class="s2">&quot;</span><span class="s">instance var is #{@var}</span><span class="s2">&quot;</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="nv">obj</span> <span class="o">=</span> <span class="nv">MyClass</span>.<span class="nv">new</span><span class="ss">(</span><span class="mi">3</span><span class="ss">)</span>
+<span class="nv">obj</span>.<span class="nv">my_method</span>
+```
+</pre></div>
+</td></tr></table>
+
+<h2 id="data-structure">Data Structure</h2>
+<p>Everything is a object</p>
+<h3 id="numeric">Numeric</h3>
+<ol>
+<li>
+<p>Integer</p>
+<ul>
+<li><code class="codehilite"><span class="mi">1</span><span class="p">.</span><span class="n">even</span><span class="o">?</span></code>, <code class="codehilite"><span class="mi">1</span><span class="p">.</span><span class="n">odd</span><span class="o">?</span></code>, <code class="codehilite"><span class="mi">1</span><span class="p">.</span><span class="n">zero</span><span class="o">?</span></code>, <code class="codehilite"><span class="mi">1</span><span class="p">.</span><span class="k">abs</span></code>: <code class="codehilite"><span class="o">?</span></code> belongs to methods names.</li>
+<li><code class="codehilite"><span class="mi">23456</span><span class="p">.</span><span class="n">chr</span><span class="p">(</span><span class="k">Encoding</span><span class="p">::</span><span class="n">UTF_8</span><span class="p">)</span></code> default encoding in ASCII</li>
+<li><code class="codehilite">.<span class="k">next</span></code>, <code class="codehilite"><span class="na">.succ</span></code> same.</li>
+<li><code class="codehilite"><span class="n">to_s</span><span class="p">(</span><span class="k">system</span><span class="p">)</span></code> to string, default in decimal system</li>
+<li>Iterate methods<ul>
+<li><code class="codehilite"><span class="mi">5</span><span class="o">.</span><span class="n">times</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">p</span> <span class="n">x</span><span class="p">}</span></code>: transfer 0-4 into block as <code class="codehilite"><span class="n">x</span></code></li>
+<li><code class="codehilite"><span class="mi">5</span><span class="o">.</span><span class="n">upto</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">p</span> <span class="n">x</span><span class="p">}</span></code>: transfer 5-10 into block as <code class="codehilite"><span class="n">x</span></code></li>
+<li><code class="codehilite"><span class="mi">5</span><span class="o">.</span><span class="n">downto</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">p</span> <span class="n">x</span><span class="p">}</span></code>: transfer 5-1 into block as <code class="codehilite"><span class="n">x</span></code></li>
+</ul>
+</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Decimal</span>
+<span class="mi">123</span><span class="p">,</span> <span class="mi">0</span><span class="n">d123</span><span class="p">,</span> <span class="mi">408_345_6789</span>
+
+<span class="c1"># binary</span>
+<span class="mb">0b100111</span>
+
+<span class="c1"># octal</span>
+<span class="mo">0123</span><span class="n">m</span> <span class="mi">0</span><span class="n">o123</span>
+
+<span class="c1"># hex</span>
+<span class="mh">0x7B</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Float</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Decimal</span>
+<span class="mi">0</span><span class="o">.</span><span class="mi">123</span><span class="n">e2</span>     <span class="c1"># 12.3</span>
+<span class="mi">123</span><span class="n">e</span><span class="o">-</span><span class="mi">1</span>      <span class="c1"># 12.3</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Rational</p>
+</li>
+<li>Complex</li>
+<li>
+<p>Get class</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Decimal</span>
+<span class="nb">p</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">class</span>
+<span class="nb">p</span> <span class="mi">1</span><span class="o">.</span><span class="n">class</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ol>
+<h3 id="range">Range</h3>
+<ol>
+<li>
+<p>Format: </p>
+<ul>
+<li><code class="codehilite"><span class="p">(</span><span class="mi">1</span><span class="p">..</span><span class="mi">5</span><span class="p">)</span></code> or <code class="codehilite"><span class="n">Range</span><span class="p">.</span><span class="k">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="k">false</span><span class="p">)</span></code>: include the end value</li>
+<li><code class="codehilite"><span class="p">(</span><span class="mi">1</span><span class="p">...</span><span class="mi">5</span><span class="p">)</span></code> or <code class="codehilite"><span class="n">Range</span><span class="p">.</span><span class="k">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="k">true</span><span class="p">)</span></code> not include the end value</li>
+</ul>
+</li>
+<li>
+<p>Method</p>
+<ul>
+<li><code class="codehilite"><span class="ss">(</span><span class="mi">1</span>..<span class="mi">5</span><span class="ss">)</span>.<span class="k">end</span> <span class="o">==</span> <span class="ss">(</span><span class="mi">1</span>...<span class="mi">5</span><span class="ss">)</span>.<span class="k">end</span></code>, <code class="codehilite"><span class="p">(</span><span class="mi">1</span><span class="p">..</span><span class="mi">5</span><span class="p">).</span><span class="k">begin</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">...</span><span class="mi">5</span><span class="p">).</span><span class="k">begin</span></code>: although the later not include the end point.</li>
+<li><code class="codehilite"><span class="p">(</span><span class="mi">1</span><span class="p">...</span><span class="mi">5</span><span class="p">).</span><span class="n">exclude_end</span><span class="o">?</span></code> =&gt; true</li>
+<li><code class="codehilite"><span class="na">.cover</span><span class="err">?</span><span class="p">(</span><span class="no">e</span><span class="p">)</span></code> or <code class="codehilite">.<span class="k">include</span>?<span class="ss">(</span><span class="nv">e</span><span class="ss">)</span></code>, return true if e INCLUDED IN RANGE (no need to be explicit)<ul>
+<li><code class="codehilite"><span class="p">(</span><span class="mi">1</span><span class="p">..</span><span class="mi">5</span><span class="p">).</span><span class="n">cover</span><span class="o">?</span><span class="p">(</span><span class="mi">2</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span></code> =&gt; <code class="codehilite"><span class="k">true</span></code></li>
+<li><code class="codehilite"><span class="ss">(</span>‘<span class="nv">car</span>’..’<span class="nv">cat</span>’<span class="ss">)</span>.<span class="k">include</span>?<span class="ss">(</span>‘<span class="nv">cas</span>’<span class="ss">)</span></code> =&gt; <code class="codehilite"><span class="k">true</span></code></li>
+</ul>
+</li>
+<li><code class="codehilite"><span class="na">.first</span><span class="p">(</span><span class="no">n</span><span class="p">)</span></code>, <code class="codehilite"><span class="na">.last</span><span class="p">(</span><span class="no">n</span><span class="p">)</span></code></li>
+<li>Element number<ul>
+<li><code class="codehilite"><span class="na">.count</span></code></li>
+<li><code class="codehilite"><span class="na">.size</span></code> not work for non integer sequence.</li>
+</ul>
+</li>
+<li><code class="codehilite"><span class="p">(..).</span><span class="n">step</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></code>: same as <code class="codehilite"><span class="nv">range</span><span class="ss">(</span><span class="nv">start</span>, <span class="k">end</span>, <span class="nv">step</span><span class="ss">)</span></code> in Python.</li>
+<li><code class="codehilite"><span class="na">.min</span></code>, <code class="codehilite"><span class="na">.max</span></code></li>
+</ul>
+</li>
+<li>
+<p>Iterative: provides each element to iterative blocks</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">p</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<p>or</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span>
+    <span class="nb">p</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span>
+<span class="k">end</span>
+</pre></div>
+</td></tr></table>
+
+<p>is the same to</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">)</span> <span class="k">do</span>
+    <span class="nb">p</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span>
+<span class="k">end</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ol>
+<h3 id="string">String</h3>
+<ol>
+<li>
+<p>Format: </p>
+<ul>
+<li>Quote: only double quoted string will be parsed</li>
+<li><code class="codehilite"><span class="c">%</span></code><ul>
+<li>Followed by <code class="codehilite"><span class="n">Q</span><span class="err">{}</span></code> or one in <code class="codehilite"><span class="err">{}</span><span class="p">,</span> <span class="p">(</span> <span class="p">),</span> <span class="o">&lt;</span> <span class="o">&gt;</span><span class="p">,</span> <span class="p">[</span> <span class="p">],</span> <span class="o">/</span> <span class="o">/</span><span class="p">,</span> <span class="o">*</span> <span class="o">*</span><span class="p">,</span> <span class="o">#</span> <span class="o">#</span><span class="p">,</span> <span class="o">!</span> <span class="o">!</span><span class="p">,</span> <span class="o">@@</span><span class="p">,</span> <span class="o">&amp;&amp;</span><span class="p">,</span> <span class="o">^^</span><span class="p">,</span> <span class="o">++</span><span class="p">,</span> <span class="o">-</span> <span class="o">-</span><span class="p">,</span><span class="o">|</span> <span class="o">|</span><span class="p">,</span> <span class="p">:</span> <span class="p">:,</span> <span class="p">;</span> <span class="p">;</span> <span class="o">%</span> <span class="o">%</span></code> will be parse.</li>
+<li>Followed by a pair of <code class="codehilite"><span class="n">q</span><span class="err">{}</span></code> won't be parsed.</li>
+<li>Convenient when contents includes quote marks.</li>
+</ul>
+</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;a string \n&#39;</span>        <span class="c1"># =&gt; &quot;1 + 1 is \#{1+1}&quot;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="s1">&#39;1 + 1 is #{1+1}&#39;</span>    <span class="c1"># =&gt; &quot;1 + 1 is \#{1+1}&quot;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="sx">%q{1 + 1 is #{1+1}}</span>  <span class="c1"># =&gt; &quot;1 + 1 is \#{1+1}&quot;</span>
+<span class="n">str3</span> <span class="o">=</span> <span class="s2">&quot;a string </span><span class="se">\n</span><span class="s2">&quot;</span>        <span class="c1"># =&gt; &quot;1 + 1 is 2&quot;</span>
+<span class="n">str4</span> <span class="o">=</span> <span class="s1">&#39;1 + 1 is #{1+1}&#39;</span>    <span class="c1"># =&gt; &quot;1 + 1 is 2&quot;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="sx">%Q{1 + 1 is </span><span class="si">#{</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="sx">}</span>  <span class="c1"># =&gt; &quot;1 + 1 is 2&quot;</span>
+<span class="n">str5</span> <span class="o">=</span> <span class="nb">String</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;another string&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Here document (show as it is)</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">&lt;&lt;</span><span class="dl">END_MARK</span>
+<span class="sh">Contents</span>
+<span class="sh">    Contents</span>
+<span class="dl">END_MARK</span>
+</pre></div>
+</td></tr></table>
+
+<p>??? note "<code class="codehilite"><span class="n">puts</span></code> vs. <code class="codehilite"><span class="n">p</span></code>"</p>
+</li>
+<li>
+<p>Methods</p>
+<ul>
+<li>
+<p>Concatenation</p>
+<ul>
+<li><code class="codehilite"><span class="o">&lt;&lt;</span></code>: same as <code class="codehilite"><span class="o">+</span></code>.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;i love you &quot;</span> <span class="o">+</span> <span class="s2">&quot;forever&quot;</span>       <span class="c1"># &quot;i love you forever&quot;</span>
+<span class="s2">&quot;i love you &quot;&quot;forever&quot;</span>          <span class="c1"># &quot;i love you forever&quot;</span>
+<span class="s2">&quot;over &quot;</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="s2">&quot; again&quot;</span>          <span class="c1"># &quot;over over over again&quot;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;i love you&quot;</span>
+<span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;r money&quot;</span>                  <span class="c1"># &quot;i love your money&quot;</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p><code class="codehilite"><span class="o">&lt;=&gt;</span></code> operator: returns -1, 0, or 1 for <code class="codehilite"><span class="o">&lt;</span></code>, <code class="codehilite"><span class="o">=</span></code>, and <code class="codehilite"><span class="o">&gt;</span></code> correspondingly.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;1&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;2&quot;</span>       <span class="c1"># -1</span>
+<span class="s2">&quot;1&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;1&quot;</span>       <span class="c1"># 0</span>
+<span class="s2">&quot;2&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;1&quot;</span>       <span class="c1"># 1</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Slicing</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;0123456&quot;</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>            <span class="c1"># &quot;0&quot;</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span>         <span class="c1"># start from 2, 5 elements</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">2</span><span class="o">..</span><span class="mi">5</span><span class="o">]</span>         <span class="c1"># &quot;2345&quot;</span>
+<span class="n">a</span><span class="o">[</span><span class="mi">2</span><span class="o">...</span><span class="mi">5</span><span class="o">]</span>        <span class="c1"># &quot;234&quot;</span>
+<span class="n">a</span><span class="o">.</span><span class="n">length</span>        <span class="c1"># 7</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Iterative: provides each character to iterative blocks</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s2">&quot;iloveyou&quot;</span><span class="o">.</span><span class="n">each_char</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">print</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">}</span>     <span class="c1"># i-l-o-v-e-y-o-u-</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ol>
+<h3 id="symbol">Symbol</h3>
+<ol>
+<li>Hash:</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">person</span><span class="o">[</span><span class="ss">:name</span><span class="o">]</span>  <span class="o">=</span> <span class="s1">&#39;yuan&#39;</span>
+<span class="n">person</span><span class="o">[</span><span class="s1">&#39;name&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="s1">&#39;yuan&#39;</span>     <span class="c1"># NOT same as above</span>
+</pre></div>
+</td></tr></table>
+
+<ol>
+<li>Method arg</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Test</span>
+    <span class="k">def</span> <span class="nf">tmp</span>
+        <span class="nb">puts</span> <span class="s2">&quot;symbol method&quot;</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">myObj</span> <span class="o">=</span> <span class="no">Test</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">m</span> <span class="o">=</span> <span class="ss">:tmp</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">call</span>      <span class="c1"># =&gt; &quot;symbol method&quot;</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="containers">Containers</h3>
+<h4 id="array">Array</h4>
+<ol>
+<li>Similar to Python <code class="codehilite"><span class="n">list</span></code>, can have diff types of element.</li>
+</ol>
+<h2 id="wired">Wired</h2>
+<ol>
+<li>Week 1-2 slide 11 <code class="codehilite"><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span></code></li>
+<li>Week 1-2 slide 22 <code class="codehilite"><span class="p">[:</span><span class="n">name</span><span class="p">]</span></code> and <code class="codehilite"><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span></code></li>
+</ol>
+<h2 id="tbd">TBD</h2>
+<ul>
+<li><code>include</code>: add everything <strong>belongs to</strong> the included class/module (class var, inst method, module const)</li>
+<li><code>extend</code>: add inst method as class method (extend it to single subclass)</li>
+</ul>
+<!-- footnotes -->
+
+<!-- links -->
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="../01-web-programming-overall/" title="Web Programming Overall" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Previous</span>Web Programming Overall</span></div></a><a href="../03-socket/" title="Ruby Socket Programming" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next"><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Next</span>Ruby Socket Programming</span></div><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright"><div class="md-footer-copyright__highlight"><a href="https://mzhao.page">Mingyang Zhao</a> &copy; 2019</div>powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="../assets/fonts/font-awesome.css"> <a href="https://github.com/amblizer" class="md-footer-social__link fa fa-github"></a>  <a href="https://amblizer.xyz" class="md-footer-social__link fa fa-quote-left"></a>  <a href="https://www.linkedin.com/in/m-zhao" class="md-footer-social__link fa fa-linkedin"></a> </div></div></div></footer></div><script src="../assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:".."}})</script><script src="../js/mathjax.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

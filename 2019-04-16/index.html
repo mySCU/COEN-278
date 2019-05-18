@@ -1,0 +1,249 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="COEN 278 note and assignments, Advanced Web Programming."><link rel="canonical" href="https://ruby.mzhao.page/2019-04-16/"><meta name="author" content="Mingyang Zhao"><meta name="lang:clipboard.copy" content="Copy to clipboard"><meta name="lang:clipboard.copied" content="Copied to clipboard"><meta name="lang:search.language" content="en"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="No matching documents"><meta name="lang:search.result.one" content="1 matching document"><meta name="lang:search.result.other" content="# matching documents"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../assets/images/favicon.png"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.0"><title>Ruby - COEN 278 - Advanced Web Programming</title><link rel="stylesheet" href="../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#3f51b5"><script src="../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../assets/fonts/material-icons.css"></head><body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="teal"><svg class="md-svg"><defs><svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#ruby" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href="https://ruby.mzhao.page" title="COEN 278 - Advanced Web Programming" class="md-header-nav__button md-logo"><i class="md-icon">import_contacts</i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">COEN 278 - Advanced Web Programming</span><span class="md-header-nav__topic">Ruby</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Type to start searching</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div><div class="md-flex__cell md-flex__cell--shrink"><div class="md-header-nav__source"><a href="https://github.com/EICamino/COEN-278/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">EICamino/COEN-278</div></a></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href="https://ruby.mzhao.page" title="COEN 278 - Advanced Web Programming" class="md-nav__button md-logo"><i class="md-icon">import_contacts</i></a>COEN 278 - Advanced Web Programming</label><div class="md-nav__source"><a href="https://github.com/EICamino/COEN-278/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">EICamino/COEN-278</div></a></div><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href=".." title="Introduction" class="md-nav__link">Introduction</a></li><li class="md-nav__item"><a href="../01-web-programming-overall/" title="Web Programming Overall" class="md-nav__link">Web Programming Overall</a></li><li class="md-nav__item"><a href="../02-ruby/" title="Ruby Language" class="md-nav__link">Ruby Language</a></li><li class="md-nav__item"><a href="../03-socket/" title="Ruby Socket Programming" class="md-nav__link">Ruby Socket Programming</a></li><li class="md-nav__item"><a href="../04-cgi/" title="Ruby CGI" class="md-nav__link">Ruby CGI</a></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#module" title="Module" class="md-nav__link">Module</a></li><li class="md-nav__item"><a href="#regular-expression" title="Regular Expression" class="md-nav__link">Regular Expression</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><a href="https://github.com/EICamino/COEN-278/edit/master/docs/2019-04-16.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a><h1 id="ruby">Ruby</h1>
+<h2 id="module">Module</h2>
+<ol>
+<li>
+<p>Def: Similar to a class, except</p>
+<ul>
+<li>without <code class="codehilite"><span class="na">.new</span><span class="p">()</span></code></li>
+<li>no super class</li>
+</ul>
+</li>
+<li>
+<p>Creation</p>
+<ul>
+<li>Class -&gt; myClass (pointer to Class) (super class) -&gt; myObj (pointer to myClass)</li>
+<li>Module -&gt; myModule (pointer to Class) (instance of Module class, singleton), no super class</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Module</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>See the sildes</p>
+</li>
+<li>
+<p>Contents</p>
+<ul>
+<li>classes / modules</li>
+<li>constants</li>
+<li>module methods</li>
+<li>instance methods</li>
+<li>instance variables</li>
+</ul>
+</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">module</span> <span class="nn">MyModule</span>     <span class="c1"># like a name space for classes</span>
+    <span class="k">class</span> <span class="nc">MyClass</span>
+        <span class="k">def</span> <span class="nf">my_method</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+</td></tr></table>
+
+<ol>
+<li>
+<p>Reason to have classes</p>
+<ul>
+<li>Organize constants (including class and modules within)</li>
+<li>Provide collection of methods.</li>
+<li>As namespace</li>
+</ul>
+</li>
+<li>
+<p>Constant:</p>
+<ul>
+<li>Class / modules names</li>
+<li>Can be changed but will generate warnings.</li>
+<li>Scope: global, can be put in anywhere and accessed from anywhere using <code class="codehilite"><span class="p">::</span><span class="n">COSTANT_NAME</span></code></li>
+<li>Cannot defined inside instance method</li>
+<li>If multiple with same name, "nearest"(physically) one will be returned</li>
+<li><code class="codehilite"><span class="p">::</span></code> notation, for top ones</li>
+</ul>
+</li>
+<li>
+<p>Diff constant and variables: make a chart</p>
+</li>
+<li>
+<p>Function -&gt; stack (This is the reason of scope)</p>
+</li>
+<li>
+<p>Scope:</p>
+<ul>
+<li>Enter a new scope:<ul>
+<li>module</li>
+<li>class</li>
+<li>method</li>
+</ul>
+</li>
+<li><code class="codehilite"><span class="n">p</span> <span class="n">local_variables</span></code>: get local variables in the current scope</li>
+</ul>
+</li>
+<li>
+<p>Module methods</p>
+<ul>
+<li>same as class method</li>
+</ul>
+</li>
+<li>
+<p>Instance methods in module: create sub class</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">module</span> <span class="nn">MyModule</span>
+    <span class="k">def</span> <span class="nf">my_method</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">MyClass</span>
+    <span class="kp">include</span> <span class="no">MyModule</span>
+<span class="k">end</span>
+
+<span class="n">myObj</span> <span class="o">=</span> <span class="no">MyClass</span><span class="o">...</span>
+<span class="n">myObj</span><span class="o">.</span><span class="n">my_method</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<p>modules included called <strong>mixin</strong>, behaves as super classes (see the slide)</p>
+<ul>
+<li>can not inheritate from multiple class, but can include multiple modules</li>
+<li>two pointer problem: anonymuos pointers point to <strong>mixin</strong>, actually have no super class pointer</li>
+</ul>
+</li>
+<li>
+<p>Another way to mix-in: prepend, see the slides, differences</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">module</span> <span class="nn">MyModule</span>
+    <span class="k">def</span> <span class="nf">my_method</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">MyClass</span>
+    <span class="kp">include</span> <span class="no">MyModule</span>
+<span class="k">end</span>
+
+<span class="n">myObj</span> <span class="o">=</span> <span class="no">MyClass</span><span class="o">...</span>
+<span class="n">myObj</span><span class="o">.</span><span class="n">my_method</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<p>resson: different order in chain</p>
+</li>
+<li>
+<p>Extend: another way to define class method</p>
+<p>make module instance method to be class method</p>
+</li>
+<li>
+<p>require and include</p>
+</li>
+<li>
+<p>do not define instance variable in mixin</p>
+</li>
+<li>
+<p>built-in mixin:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span>  <span class="nc">Student</span>
+    <span class="kp">include</span> <span class="no">Comparable</span>
+    <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+    <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">&lt;=&gt;</span><span class="p">(</span><span class="n">otherStudent</span><span class="p">)</span>
+        <span class="nb">self</span><span class="o">.</span><span class="n">name</span> <span class="o">&lt;=&gt;</span> <span class="n">otherStudent</span><span class="o">.</span><span class="n">name</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">to_s</span>
+        <span class="s2">&quot;</span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">end</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>Kernel</p>
+<ul>
+<li><code class="codehilite"><span class="k">Object</span></code> class is using mixin called <code class="codehilite"><span class="n">Kernel</span></code></li>
+</ul>
+</li>
+<li>Enumerate</li>
+</ol>
+<h2 id="regular-expression">Regular Expression</h2>
+<ol>
+<li>Def: a way to define a language: <code class="codehilite"><span class="o">/</span><span class="n">abc</span><span class="o">/</span></code> (meta char)</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sr">/abc/</span>
+
+<span class="sr">/abc|xyz/</span>
+<span class="sr">/(Homer|Marge|Bart) Simpson/</span>
+
+<span class="sr">/^abc$/</span>
+</pre></div>
+</td></tr></table>
+
+<ol>
+<li>
+<p>Meta Chars</p>
+<ul>
+<li><code class="codehilite"><span class="o">/</span><span class="p">,</span> <span class="err">\</span><span class="p">,</span> <span class="o">^</span><span class="p">,</span> <span class="err">$</span><span class="p">,</span> <span class="o">+</span><span class="p">,</span> <span class="o">-</span></code></li>
+<li><code class="codehilite"><span class="o">+</span></code>, <code class="codehilite"><span class="o">*</span></code>, <code class="codehilite"><span class="o">?</span></code></li>
+<li><code class="codehilite"><span class="err">{</span><span class="k">max</span><span class="p">,</span> <span class="k">min</span><span class="err">}</span></code>: number of times (exact or range)</li>
+<li><code class="codehilite"><span class="p">[]</span></code>, short version -&gt; <code class="codehilite"><span class="p">[</span><span class="n">a</span><span class="o">-</span><span class="n">z</span><span class="p">]</span></code>, <code class="codehilite"><span class="p">[</span><span class="n">a</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span></code>, <code class="codehilite"><span class="p">[</span><span class="n">a</span><span class="o">-</span><span class="n">zA</span><span class="o">-</span><span class="n">Z0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span></code>, use <code class="codehilite"><span class="o">^</span></code> to negate inside [] (even shorter: \d, \D, \w, \W, \s, \S)</li>
+</ul>
+</li>
+<li>
+<p>Method:</p>
+<ul>
+<li><code class="codehilite"><span class="na">.scan</span></code></li>
+<li><code class="codehilite"><span class="na">.sub</span></code> replace the first matching</li>
+<li><code class="codehilite"><span class="na">.gsub</span></code> replace all matching</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>Matching Operator: <code class="codehilite"><span class="o">/</span><span class="n">RegEx</span><span class="o">/</span> <span class="o">=~</span> <span class="err">&quot;</span><span class="n">String</span></code></p>
+</li>
+</ol></article></div></div></main><footer class="md-footer"><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright"><div class="md-footer-copyright__highlight"><a href="https://mzhao.page">Mingyang Zhao</a> &copy; 2019</div>powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="../assets/fonts/font-awesome.css"> <a href="https://github.com/amblizer" class="md-footer-social__link fa fa-github"></a>  <a href="https://amblizer.xyz" class="md-footer-social__link fa fa-quote-left"></a>  <a href="https://www.linkedin.com/in/m-zhao" class="md-footer-social__link fa fa-linkedin"></a> </div></div></div></footer></div><script src="../assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:".."}})</script><script src="../js/mathjax.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

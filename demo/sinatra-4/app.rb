@@ -1,9 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
-require './song'
-
-# edit ip bonded
-set :bind, '0.0.0.0'
+# require './song'
 
 get '/' do
   @title = "home"
@@ -21,12 +18,21 @@ get '/contact' do
   erb :contact
 end
 
-get '/*' do
-  @route = params[:splat]
-  pass
+get '/students' do
+  @title = "Students"
+  erb :students
+end
+
+get '/comments' do
+  @title = "Comments"
+  erb :comments
+end
+
+get '/videos' do
+  @title = "Videos"
+  erb :videos
 end
 
 not_found do
   erb :notfound, :layout=>false
 end
-

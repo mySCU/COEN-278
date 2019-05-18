@@ -1,17 +1,22 @@
 <html>
+
 <head>
 <link href="style.css" rel="stylesheet" type="text/css">
-<title><%= @title || "Songs by Sinatra"%></title>
+<title><%= @title || "Student\n Information\n System"%></title>
 </head>
+
 <body>  
   <h1>Songs by Sinatra</h1>
-  <img src="images/sinatra.jpg" alt="sinatra" width=100%>
-<ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/about">About</a></li>
-  <li><a href="/contact">Contact</a></li>
-  <li><a href="/songs">Songs</a></li>                        
-    </ul>
-<%= yield %>
+  <img src="images/students.png" alt="Students" width=100%>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/students">Students</a></li>
+    <li><a href="/comments">Comments</a></li>
+    <li><a href="/video">Videos</a></li>                        
+    <li><a href="/login">Login</a></li>                        
+  </ul>
+  <%= yield %>
 </body>
 </html>

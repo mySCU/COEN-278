@@ -9,18 +9,14 @@ RUN apt-get update \
         libsqlite3-dev \
         vim
 
-# sinatra, THIN server
+# Ruby on Rails
 RUN gem install \
-        sinatra \
-        sinatra-reloader \
-        thin \
-        data_mapper \
-        dm-sqlite-adapter
+        Rails
 
-COPY demo /usr/src/demo
+# COPY demo /usr/src/demo
 
-WORKDIR /usr/src/demo
+# WORKDIR /usr/src/demo
 
-CMD [ "bash" ]
+# CMD [ "bash" ]
 
 EXPOSE 80

@@ -1,0 +1,3 @@
+[submodule "homework/hw2-sinatra"]
+	path = homework/hw2-sinatra
+	url = git@github.com:Amblizer/sinatra-website.git

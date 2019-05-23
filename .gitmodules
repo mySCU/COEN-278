@@ -1,3 +1,6 @@
 [submodule "homework/hw2-sinatra"]
 	path = homework/hw2-sinatra
 	url = git@github.com:Amblizer/sinatra-website.git
+[submodule ".\\homework\\hw1-ruby-language"]
+	path = .\\homework\\hw1-ruby-language
+	url = git@github.com:Amblizer/ruby-language.git

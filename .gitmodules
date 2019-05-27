@@ -7,3 +7,6 @@
 [submodule "slide"]
 	path = slide
 	url = git@github.com:Amblizer/COEN278-ruby-slides.git
+[submodule "examCheatSheet"]
+	path = examCheatSheet
+	url = git@github.com:Amblizer/rubyCheat.git

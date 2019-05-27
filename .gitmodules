@@ -4,6 +4,7 @@
 [submodule "homework/hw2-sinatra"]
 	path = homework/hw2-sinatra
 	url = git@github.com:Amblizer/sinatra-website.git
+	ignore = dirty
 [submodule "slide"]
 	path = slide
 	url = git@github.com:Amblizer/COEN278-ruby-slides.git

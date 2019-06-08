@@ -11,3 +11,6 @@
 [submodule "examCheatSheet"]
 	path = examCheatSheet
 	url = git@github.com:Amblizer/rubyCheat.git
+[submodule "homework/hw3-rails-online-store"]
+	path = homework/hw3-rails-online-store
+	url = git@github.com:Amblizer/coen278-rails-online-store.git
